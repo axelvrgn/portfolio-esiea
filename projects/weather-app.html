@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Application météo | Axel Vergognan</title>
+    <link rel="stylesheet" href="../css/styles.css" />
+    <link rel="stylesheet" href="../css/animations.css" />
+    <script src="../js/theme.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="../index.html">Axel Vergognan</a>
+        </div>
+        <nav>
+          <button class="mobile-menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav-links">
+            <li><a href="../index.html">Présentation</a></li>
+            <li><a href="../skills.html">Compétences</a></li>
+            <li><a href="../projects.html" class="active">Réalisations</a></li>
+            <li><a href="../contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <button id="theme-toggle" aria-label="Toggle dark/light mode">
+          <svg
+            class="sun-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg
+            class="moon-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <div class="container">
+          <h1>
+            Développement d'une Application Météo avec Flutter : Une Initiation
+            Réussie
+          </h1>
+        </div>
+      </section>
+
+      <section class="skill-detail-section">
+        <div class="container">
+          <div class="skill-description">
+            <h3>Contexte de la réalisation</h3>
+            <p>
+              Dans le cadre de mon mastère en ingénierie logicielle, j'ai suivi
+              un cours sur Flutter, un framework de développement d'applications
+              mobiles.
+              <br />
+              À la fin de ce cours, nous devions réaliser un projet individuel
+              pour évaluer nos compétences acquises. Le choix du projet était
+              libre, et j'ai décidé de développer une application météo simple,
+              que nous devions présenter lors du dernier cours.
+            </p>
+
+            <h3>Présentation et définition du projet</h3>
+            <p>
+              L'application de prévisions météorologiques que j'ai développée
+              permet d'afficher les prévisions pour une ville donnée. Elle
+              utilise l'API de
+              <a href="https://www.weatherapi.com/">Weather API</a> pour
+              récupérer les données météorologiques heure par heure.
+
+              <br />
+              J'ai choisi ce projet car il me semblait être un bon moyen de
+              démontrer ma maîtrise des bases de Flutter et du langage Dart,
+              tout en réalisant une application utile et accessible.
+
+              <br />
+              L'application se compose d'une seule page, ce qui simplifie la
+              gestion des fonctionnalités et permet de se concentrer sur
+              l'essentiel.
+            </p>
+
+            <h3>Enjeux</h3>
+            <p>
+              Pour moi, ce projet représentait une occasion de prouver à mon
+              enseignant que j'avais bien assimilé les concepts enseignés durant
+              le cours. Il s'agissait également de montrer ma capacité à
+              effectuer des recherches et à approfondir mes connaissances sur un
+              sujet nouveau.
+
+              <br />
+              Sur le plan académique, ce projet était pertinent car il
+              s'inscrivait dans ma formation d'expert en ingénierie logicielle,
+              me permettant de diversifier mes compétences techniques.
+            </p>
+
+            <h3>Risques</h3>
+            <p>
+              Le principal défi technique était de développer une application
+              fonctionnelle et esthétiquement plaisante en seulement deux
+              semaines.
+
+              <br />
+              Étant en alternance, je devais jongler entre mes obligations
+              professionnelles et académiques, ce qui limitait mon temps
+              disponible pour travailler sur le projet.
+
+              <br />
+              Réussir à rendre l'application aussi performante et intuitive que
+              celles disponibles sur les stores d'applications était un objectif
+              ambitieux.
+            </p>
+
+            <h3>Objectifs poursuivis</h3>
+            <p>
+              Mon objectif principal était de créer une application météo avec
+              un minimum de fonctionnalités, tout en soignant l'esthétique et
+              l'ergonomie.
+
+              <br />
+              Je voulais que mon application soit comparable à celles
+              disponibles sur les stores, tant en termes de design que de
+              fonctionnalités.
+
+              <br />
+              Ces objectifs étaient alignés avec mes compétences acquises durant
+              le cours et mon ambition de diversifier mes compétences en
+              développement mobile.
+            </p>
+
+            <h3>Étapes</h3>
+            <p>Pour réaliser ce projet, j'ai suivi plusieurs étapes clés :</p>
+            <ul>
+              <li>
+                <strong>Recherche et Planification</strong> : J'ai commencé par
+                étudier les applications météo existantes pour identifier les
+                fonctionnalités essentielles. J'ai également exploré l'API
+                WeatherAPI pour comprendre comment récupérer les données
+                météorologiques.
+              </li>
+
+              <li>
+                <strong>Conception de l'Interface</strong> : J'ai conçu une
+                interface utilisateur simple et intuitive, en mettant l'accent
+                sur l'esthétique et la facilité d'utilisation.
+              </li>
+
+              <li>
+                <strong>Développement</strong> : J'ai implémenté les
+                fonctionnalités de base, telles que la récupération des données
+                météorologiques et leur affichage sur l'interface.
+              </li>
+
+              <li>
+                <strong>Tests et Débogage</strong> : J'ai testé l'application
+                pour m'assurer qu'elle fonctionnait correctement et j'ai corrigé
+                les bugs identifiés.
+              </li>
+            </ul>
+
+            <h3>Résultats</h3>
+            <p>
+              À la fin du projet, j'ai réussi à développer une application météo
+              fonctionnelle et esthétiquement plaisante. L'application
+              permettait d'afficher les prévisions météorologiques pour une
+              ville ou un emplacement donné, avec une interface utilisateur
+              intuitive. J'ai présenté l'application lors du dernier cours et
+              j'ai reçu des retours positifs de la part de mon enseignant et de
+              mes camarades.
+            </p>
+
+            <h3>Lendemain du projet</h3>
+            <p>
+              Ce projet m'a permis de renforcer mes compétences en développement
+              mobile et en gestion de projet. Il m'a également donné confiance
+              dans ma capacité à apprendre de nouvelles technologies rapidement.
+              Je prévois d'ajouter de nouvelles fonctionnalités à l'application,
+              telles que des notifications météo et des prévisions à long terme,
+              pour en faire un outil encore plus utile.
+            </p>
+
+            <h3>Mon Regard Critique (et Fier)</h3>
+            <p>
+              Je suis fier d'avoir réussi à développer une application
+              fonctionnelle en si peu de temps, malgré les contraintes de temps
+              et de ressources. Ce projet m'a permis de mettre en pratique mes
+              compétences en Flutter et en Dart, tout en développant des
+              compétences transversales telles que la gestion de projet et la
+              communication. Cependant, je reconnais qu'il y a encore des
+              améliorations possibles, notamment en termes de performance et de
+              fonctionnalités avancées.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <a href="../index.html">Axel Vergognan</a>
+          </div>
+          <div class="footer-social">
+            <a href="https://github.com/axelvrgn" aria-label="GitHub">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                ></path>
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/axel-vergognan-628aa71b1/"
+              aria-label="LinkedIn"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                ></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Axel Vergognan</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

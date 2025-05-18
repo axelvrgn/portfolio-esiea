@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Réalisations | Axel Vergognan</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <script src="js/theme.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="index.html">Axel Vergognan</a>
+        </div>
+        <nav>
+          <button class="mobile-menu-toggle" aria-label="Toggle menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <ul class="nav-links">
+            <li><a href="index.html">Présentation</a></li>
+            <li><a href="skills.html">Compétences</a></li>
+            <li><a href="projects.html" class="active">Réalisations</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <button id="theme-toggle" aria-label="Toggle dark/light mode">
+          <svg
+            class="sun-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg
+            class="moon-icon"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="page-header">
+        <div class="container">
+          <h1>Mes réalisations</h1>
+        </div>
+      </section>
+
+      <section class="projects-filter">
+        <div class="container">
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">Tout</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="mobile">Mobile</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects-grid">
+        <div class="container">
+          <div class="projects-container">
+            <!-- Project 1 -->
+            <a
+              href="projects/student-job-finder.html"
+              style="animation-delay: 0.2s"
+              class="project-card fade-in"
+              data-category="web"
+            >
+              <div class="project-img">
+                <img
+                  src="assets/Logo_SJF.png"
+                  alt="Student Job Finder logo App"
+                />
+              </div>
+              <div class="project-content">
+                <h3>Student Job Finder</h3>
+                <p>
+                  Projet étudiant, application web et mobile pour aider les
+                  étudiants à trouver un job
+                </p>
+                <div class="project-tags">
+                  <span>VueJS</span>
+                  <span>Java</span>
+                  <span>Spring</span>
+                  <span>Flutter</span>
+                  <span>MongoDB</span>
+                </div>
+              </div>
+            </a>
+
+            <!-- Project 2 -->
+            <a
+              href="projects/weather-app.html"
+              class="project-card fade-in"
+              style="animation-delay: 0.2s"
+              data-category="mobile"
+            >
+              <div class="project-img">
+                <img
+                  src="assets/weather_appLogo2.jpg"
+                  alt="Mobile Weather App logo"
+                />
+              </div>
+              <div class="project-content">
+                <h3>Application Météo</h3>
+                <p>Projet étudiant, application mobile de prévision météo</p>
+                <div class="project-tags">
+                  <span>Flutter</span>
+                </div>
+              </div>
+            </a>
+
+            <!-- Project 3 -->
+            <a
+              href="projects/saas.html"
+              class="project-card fade-in"
+              style="animation-delay: 0.2s"
+              data-category="web"
+            >
+              <div class="project-img">
+                <img src="assets/Logo_ByTel.png" alt="saas interne logo" />
+              </div>
+              <div class="project-content">
+                <h3>Saas interne</h3>
+                <p>
+                  Initialisation d'une application interne pour la gestions de
+                  produits
+                </p>
+                <div class="project-tags">
+                  <span>ReactJS</span>
+                  <span>Java</span>
+                  <span>Spring</span>
+                  <span>PostgreSQL</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-logo">
+            <a href="index.html">Axel Vergognan</a>
+          </div>
+          <div class="footer-social">
+            <a href="https://github.com/axelvrgn" aria-label="GitHub">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"
+                ></path>
+              </svg>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/axel-vergognan-628aa71b1/"
+              aria-label="LinkedIn"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                ></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 Axel Vergognan</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,211 @@
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease forwards;
+  opacity: 0;
+}
+
+.slide-in {
+  animation: slideIn 0.6s ease forwards;
+  opacity: 0;
+}
+
+.scale-in {
+  animation: scaleIn 0.5s ease forwards;
+  opacity: 0;
+}
+
+/* Button hover effects */
+.btn:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-3px);
+}
+
+/* Image hover effects */
+.project-img img {
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-img img {
+  transform: scale(1.05);
+}
+
+/* Service card hover effect */
+.service-card:hover .service-icon,
+.soft-skill-card:hover .soft-skill-icon {
+  animation: spin 1s ease;
+}
+
+/* Add animation delay utility classes */
+.delay-200 {
+  animation-delay: 200ms;
+}
+
+.delay-400 {
+  animation-delay: 400ms;
+}
+
+.delay-600 {
+  animation-delay: 600ms;
+}
+
+.delay-800 {
+  animation-delay: 800ms;
+}
+
+/* Page transitions */
+@keyframes pageTransition {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+main {
+  animation: pageTransition 0.4s ease forwards;
+}
+
+/* Link hover effects */
+.nav-links a {
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: var(--color-primary);
+  transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after,
+.nav-links a.active::after {
+  width: 100%;
+}
+
+/* Button press effect */
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Project tag hover effect */
+.project-tags span {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.project-tags span:hover {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+/* Social icon hover animations */
+.social-icon, .footer-social a {
+  transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.social-icon:hover, .footer-social a:hover {
+  transform: translateY(-5px) rotate(5deg);
+}
+
+/* Skill bar animation */
+.skill-progress-bar {
+  animation: skillProgress 1.5s ease forwards;
+  width: 0;
+}
+
+@keyframes skillProgress {
+  from {
+    width: 0;
+  }
+  to {
+    width: var(--width, 0);
+  }
+}
+
+/* Contact form focus effects */
+.form-group input, .form-group textarea {
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.form-group input:focus, .form-group textarea:focus {
+  border-color: var(--color-primary);
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Subtle hover effect for statistics cards */
+.stat-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Progressive loading animation */
+.progressive-load > * {
+  animation: fadeIn 0.6s ease forwards;
+  opacity: 0;
+}
+
+.progressive-load > *:nth-child(1) { animation-delay: 0.1s; }
+.progressive-load > *:nth-child(2) { animation-delay: 0.2s; }
+.progressive-load > *:nth-child(3) { animation-delay: 0.3s; }
+.progressive-load > *:nth-child(4) { animation-delay: 0.4s; }
+.progressive-load > *:nth-child(5) { animation-delay: 0.5s; }
+.progressive-load > *:nth-child(6) { animation-delay: 0.6s; }
+
+/* Rotate animation for theme toggle */
+#theme-toggle:hover svg {
+  animation: spin 1s ease;
+}
