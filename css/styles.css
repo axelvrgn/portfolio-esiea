@@ -407,9 +407,9 @@ main {
 
 .profile-image {
   width: 350px;
-  height: 350px;
+  height: 332px;
   border-radius: 50%;
-  background-image: url("../assets/pp_axel.png");
+  background-image: url("../assets/pp_axel_memoji.png");
   background-size: cover;
   background-position: center;
   border: 8px solid rgba(59, 130, 246, 0.1);
